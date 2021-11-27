@@ -22,7 +22,7 @@ options = webdriver.ChromeOptions()
 options.add_argument(CHROME_PROFILE_PATH)
 
 browser = webdriver.Chrome(
-    executable_path='/Users/akjasim/chromedriver/chromedriver', options=options)
+    executable_path='C:/Users/ribei/Downloads/chromedriver', options=options)
 
 browser.maximize_window()
 
@@ -52,7 +52,7 @@ for group in groups:
 
     time.sleep(1)
 
-    input_xpath = '//div[@contenteditable="true"][@data-tab="1"]'
+    input_xpath = '//div[@contenteditable="true"][@data-tab="9"]'
     input_box = browser.find_element_by_xpath(input_xpath)
 
     pyperclip.copy(msg)
